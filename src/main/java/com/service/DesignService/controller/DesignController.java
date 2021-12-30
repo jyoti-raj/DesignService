@@ -14,7 +14,7 @@ public class DesignController {
 	@GetMapping("/username")
 	public String userName() {
 		String name = DesignService.getName();
-		log.info("user name is ", name);
+		log.info("user name is {}", name);
 		return name;
 	}
 	
